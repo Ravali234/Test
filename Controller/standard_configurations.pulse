@@ -1,0 +1,117 @@
+[DEFAULT]
+ext_clock_src_selection = 0
+reference_clock_source = 0
+reference_rate = 10
+sample_clock_source = 1
+sample_rate = 1000
+ext_trigger_src_selection = 0
+auto_preconfig = False
+debug_verbosity = 5
+alert_enable = True, True, True, True, True, True, True
+rx_external_trigger = False
+rx_edge_trigger = False
+rx_framed = False
+rx_frame_size = 16384
+rx_trigger_delay_period = 1
+rx_decimation_enable = False
+rx_decimation_factor = 1
+rx_enable_pri = False
+rx_finite = False
+rx_rearm = False
+rx_period = 0
+rx_pattern_file = PatternFile.ini
+rx_count = 0
+rx_packet_size = 65536
+rx_force_size = False
+rx_test_counter_enable = False
+rx_test_gen_mode = 0
+rx_logger_enable = True
+rx_plot_enable = True
+rx_merge_parse_enable = False
+rx_samples_to_log = 100000
+rx_overwrite_bdd = True
+rx_auto_stop = True
+rx_merge_packet_size = 65536
+rx_active_channels = False, False
+tx_external_trigger = True
+tx_edge_trigger = True
+tx_framed = False
+tx_count = 2
+tx_frame_size = 0
+tx_trigger_delay_period = 0
+tx_enable_pri = False
+tx_finite = True
+tx_rearm = False
+tx_period = 10000000
+tx_pattern_file = PatternFile.ini
+tx_test_gen_enable = False
+tx_test_gen_mode = 0
+tx_test_frequency_mhz = 0.0
+tx_packet_size = 0
+tx_play_from_file_enable = False
+tx_active_channels = True, False, False, False
+
+[Single Pulse]
+
+# The next two lines provide data for loading into the FPGA's buffer
+tx_play_from_file_enable = True
+tx_play_from_file_filename = single_pulse.velo
+
+# We want to make sure that automatic preconfiguration is off.
+auto_preconfig = False
+
+# The reciver needs to be configured to externally trigger
+# in unframed edge mode.
+rx_external_trigger = False
+rx_edge_trigger = True
+rx_framed = False
+rx_frame_size = 1000000
+rx_trigger_delay_period = 2
+rx_decimation_enable = False
+rx_decimation_factor = 0
+
+# Likewise, we want the transmitter to trigger in the same way.
+tx_external_trigger = False
+tx_edge_trigger = True
+tx_framed = False
+tx_frame_size = 1000000
+tx_trigger_delay_period = 2
+tx_decimation_enable = False
+tx_decimation_factor = 0
+
+# To aquire the signal, we apply a pattern (no_delay.pattern) to
+# the RX PRI that tells the FPGA to aquire for a long width
+# with no delays and to PRI code 0x01.
+rx_enable_pri = True
+rx_finite = True
+rx_rearm = True
+rx_period = 100000000
+rx_count = 500
+rx_pattern_file = receiver.pattern
+
+# We want the aquired signal to be logged to Data.bin, but nothing else
+# to be done with it.
+rx_logger_enable = True
+rx_plot_enable = False
+rx_merge_parse_enable = False
+rx_samples_to_log = 260000000
+rx_overwrite_bdd = True
+rx_auto_stop = True
+
+# The TX PRI is more complicated, and tells the FPGA when to
+# start and stop playing from the waveform file loaded above.
+tx_enable_pri = True
+tx_finite = True
+tx_rearm = True
+tx_period =100000000
+tx_count = 500
+tx_pattern_file = transmitter.pattern
+
+# Next, we disable all testing modes.
+tx_test_gen_enable = False
+tx_test_gen_mode = 1
+tx_test_frequency_mhz = 200
+
+# Finally, we set TX and RX channels 0 to be on, and all others to be off.
+rx_active_channels = True, False
+tx_active_channels = True, False, True, False

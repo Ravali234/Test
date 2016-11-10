@@ -1,0 +1,80 @@
+
+[Comments]
+CommentLines=0
+SeeAlso
+
+[Data]
+Address Format=0
+Annotate Seams=1
+Big Endian=0
+Break=1
+Channel Enable_=0
+Channel Enable=0
+Complex=0
+Criteria Threshold=75
+Criteria=0
+Current Channel=0
+Current Offset=0
+Data Format=%11.3f
+Data Polarity=1
+Data Span=300
+Data Type=0
+Dc Offset=0
+Digital View Channel=0
+Enable Digital View=0
+Enable Scaling=1
+Event Header=0
+Event Trailer=0
+File Name=Data.bin
+Header Bytes=0
+Input Span=2000
+Number of Channels=1
+Number of Devices=1
+Read Only=1
+Sample Rate=1e+006
+Seam Size=262152
+Significant Bits=12
+Size=1000
+Trailer Bytes=0
+Units=mV
+
+[Graph]
+CfftTitle
+ConstellationTitle
+Cursor Mode=0
+FFT Average=1
+FFT Cursor Mode=0
+FFT Left Extent=0
+FFT Lower Limit=-150
+FFT Points=9
+FFT Right Extent=0
+FFT Upper Limit=0
+FFT Window=2
+FFT X Axis Scale=1
+FFT Y Axis Scale=1
+FFT Y Axis Scaling=0
+FftTitle
+Graph Enable_=0
+Graph Enable=0
+Leap=65536
+Lower Limit=-2048
+NullDataValue=1.2345e-020
+TimeTitle
+Upper Limit=2048
+X Axis Scale=0
+Y Axis Scale=0
+Y Axis Scaling=0
+
+[Scsi]
+Scsi Device=-1
+Scsi File ID=-1
+
+[System]
+Active Frequency Page=0
+Active Page=0
+Active Time Page=0
+Board Type=0
+Server Slot Name=Stream
+Source=4
+Target=0
+Update Rate=3

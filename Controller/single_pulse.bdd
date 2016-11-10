@@ -1,0 +1,88 @@
+
+[Comments]
+Binary To Text Format=% 11.6f
+CommentLines=0
+SeeAlso=1
+
+[Data]
+Address Format=0
+Annotate Seams=1
+Big Endian=0
+Break=1
+Complex=0
+Criteria Threshold=75
+Criteria=0
+Current Channel=0
+Current Offset=0
+Data Format=%11.3f
+Data Polarity=1
+Data Span=2000288
+Data Type=0
+Dc Offset=0
+Enable Scaling=0
+Event Header=0
+Event Trailer=0
+File Name=C:\Users\fpga\Desktop\SinglePulseStandard_Mar31_2015_2\single_pulse.velo
+Header Bytes=0
+Im Mode=0
+Input Span=0
+Keep Dc=1
+Number of Channels=1
+Number of Devices=1
+Offset=0
+Power Spectrum=0
+Sample Rate=100000
+Scale Factor=1
+Seam Size=262152
+Significant Bits=16
+Size=0
+Trailer Bytes=0
+Units=mV
+
+[Graph]
+BinsPerHarmonic=2
+CfftSubtitle
+CfftTitle
+ConstellationSubtitle
+ConstellationTitle
+Cursor Mode=0
+Digital View Channel=0
+Enable Digital View=0
+FFT Alpha=0.01
+FFT Average=1
+FFT Cursor Mode=0
+FFT Left Extent1=0
+FFT Left Extent=0
+FFT Lower Limit=-150
+FFT Points=9
+FFT Right Extent1=0
+FFT Right Extent=0
+FFT Upper Limit=0
+FFT Window=2
+FFT X Axis Scale=1
+FFT Y Axis Scale=1
+FFT Y Axis Scaling=0
+FftSubtitle
+FftTitle
+Graph Enable_=-1
+Graph Enable=-1
+Harmonics=6
+Leap=10
+Lower Limit=-32768
+NullDataValue=1.234E-20
+TimeSubtitle
+TimeTitle
+Upper Limit=32768
+X Axis Scale=0
+Y Axis Scale=0
+Y Axis Scaling=0
+
+[System]
+Active Frequency Page=0
+Active Page=0
+Active Time Page=0
+Board Type=0
+Server Slot Name
+Source=3
+Target=0
+Update Rate=2

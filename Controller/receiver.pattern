@@ -1,0 +1,12 @@
+[Destination]
+ArraySize=1
+P0=1
+
+[Delay]
+ArraySize=1
+P0=0
+
+[Width]
+ArraySize=1
+P0=2000
+Hello from the inside receiver

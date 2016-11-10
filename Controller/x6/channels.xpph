@@ -1,0 +1,32 @@
+;;;;
+;; channels.xpph: xpulprog-language header for X6-1000M channel names.
+;;;;
+
+;; print "Loading X6-1000M channels..."
+
+define DA0 = channel("DA0", analog)
+define DA1 = channel("DA1", analog)
+define DA2 = channel("DA2", analog)
+define DA3 = channel("DA3", analog)
+
+define AD0 = channel("AD0", digital)
+define AD1 = channel("AD1", digital)
+
+define ADC0_DIO0 = channel("ADC0_DIO0", digital)
+define ADC0_DIO1 = channel("ADC0_DIO1", digital)
+define ADC0_DIO2 = channel("ADC0_DIO2", digital)
+define ADC0_DIO3 = channel("ADC0_DIO3", digital)
+define ADC1_DIO0 = channel("ADC1_DIO0", digital)
+define ADC1_DIO1 = channel("ADC1_DIO1", digital)
+define ADC1_DIO2 = channel("ADC1_DIO2", digital)
+define ADC1_DIO3 = channel("ADC1_DIO3", digital)
+
+define DAC0_DIO0 = channel("DAC0_DIO0", digital)
+define DAC0_DIO1 = channel("DAC0_DIO1", digital)
+define DAC0_DIO2 = channel("DAC0_DIO2", digital)
+define DAC0_DIO3 = channel("DAC0_DIO3", digital)
+define DAC1_DIO0 = channel("DAC1_DIO0", digital)
+define DAC1_DIO1 = channel("DAC1_DIO1", digital)
+define DAC1_DIO2 = channel("DAC1_DIO2", digital)
+define DAC1_DIO3 = channel("DAC1_DIO3", digital)
+

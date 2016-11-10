@@ -1,0 +1,16 @@
+import rabi_experiment as re
+
+data = re.run_rabi(pulse_times = np.array([500]),comp_times = np.array([0]),comp_amps=np.array([0]),echo_delay = 1000,num_avgs=1,num_repetitions=10)
+
+reload(re)
+
+reload(gw)
+
+import x6.pulplot
+
+tx_pri = x6.pulplot.PRIPatternParser('transmitter.pattern')
+
+rx_pri = x6.pulplot.PRIPatternParser('receiver.pattern')
+
+x6.pulplot.plot_pri_pattern(1000, [True, False, True, False], rx_pri, tx_pri, tx_velofile='rabi_experiment_pulse.velo')
+

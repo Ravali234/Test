@@ -1,0 +1,13 @@
+cd C:\Users\fortheking\Desktop\SinglePulseStandard_Mar31_2015_3
+
+import single_pulse as sp
+
+[data_avg,data_part,data] = sp.run_expt(pulse_amps=np.array([1]),pulse_times=np.array([100]),dead_time=500,rep_time_sec=0.01,num_avgs=128,num_repetitions=1)
+
+plot(data_avg)
+
+plot(data_part[0])
+plot(data_part[8])
+plot(data_part[127])
+
+plot(data)
